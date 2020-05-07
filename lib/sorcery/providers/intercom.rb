@@ -17,7 +17,7 @@ module Sorcery
       end
 
       def get_user_hash(access_token)
-        response = access_token.get(user_info_path)
+        response = access_token.get(user_info_path, headers: {'Accept' => application/json})
         body = JSON.parse(response.body)
         auth_hash(access_token).tap do |h|
           h[:user_info] = body
