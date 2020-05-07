@@ -27,6 +27,7 @@ module Sorcery
           require 'sorcery/providers/auth0'
           require 'sorcery/providers/line'
           require 'sorcery/providers/discord'
+          require 'sorcery/providers/intercom'
 
           Config.module_eval do
             class << self

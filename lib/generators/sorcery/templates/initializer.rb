@@ -229,6 +229,12 @@ Rails.application.config.sorcery.configure do |config|
   # config.discord.secret = "xxxxxx"
   # config.discord.callback_url = "http://localhost:3000/oauth/callback?provider=discord"
   # config.discord.scope = "email guilds"
+
+  # For infromation about Intercom API:
+  # https://developers.intercom.com/building-apps/docs/setting-up-oauth
+  # config.intercom.key = "xxxxxx"
+  # config.intercom.secret = "xxxxxx"
+  # config.intercom.callback_url = "http://localhost:3000/oauth/callback?provider=intercom"
   # --- user config ---
   config.user_config do |user|
     # -- core --
